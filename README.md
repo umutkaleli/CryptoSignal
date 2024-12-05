@@ -46,48 +46,59 @@ Bu proje, **Kotlin** ile geliştirilmiş bir **frontend** ve **Python** ile yaz�
    pip install -r requirements.txt
 
 2. **Backend'i Çalıştırın**
-   Flask sunucusunu başlatın:
-
+   **Flask sunucusunu başlatın:**
+   ```bash
    python app.py
 
-3. **Frontend Çalıştırma**
-   Kotlin Projesini Açın
+### **Frontend Çalıştırma**
+
+1. **Kotlin Projesini Açın
    Android Studio veya IntelliJ IDEA kullanarak projeyi açın.
 
-   Backend Bağlantısını Ayarlayın
+2. **Backend Bağlantısını Ayarlayın
    Backend'in çalıştığı IP ve port'u ayarlayın.
 
-   Uygulamayı Çalıştırın
+3. **Uygulamayı Çalıştırın
    Emulator veya fiziksel cihazda çalıştırarak frontend'i test edin.
 
-   API Endpoint'leri
-Metot	Endpoint	Açıklama
-POST	/start-bot	Botu başlatır.
-POST	/stop-bot	Botu durdurur.
-GET	/wallet	Mevcut cüzdan bakiyesini ve coin miktarlarını döner.
-GET	/simulate	Belirli parametreler ile backtest çalıştırır.
-GET	/prices	Tüm coin fiyatlarını döner.
+## **API Endpoint'leri**
 
-**Bağımlılıklar**
-*Backend*
-Python 3.8 veya üzeri
-Flask
-Flask-SocketIO
-Pandas
-NumPy
-Binance API
+| **Metot** | **Endpoint**     | **Açıklama**                                         |
+|-----------|------------------|-----------------------------------------------------|
+| `POST`    | `/start-bot`     | Botu başlatır.                                      |
+| `POST`    | `/stop-bot`      | Botu durdurur.                                      |
+| `GET`     | `/wallet`        | Mevcut cüzdan bakiyesini ve coin miktarlarını döner. |
+| `GET`     | `/simulate`      | Belirli parametreler ile backtest çalıştırır.        |
+| `GET`     | `/prices`        | Tüm coin fiyatlarını döner.                         |
+| `GET`     | `/coin`          | Belirtilen coin için cüzdan bilgilerini döner.       |
+| `GET`     | `/historical`    | Geçmiş veri fiyatlarını döner.                      |
+| `GET`     | `/get-candlestick` | Mum grafiği verilerini döner.                      |
 
-*Frontend*
-Kotlin
-Retrofit
-Coroutine
-LiveData ve ViewModel
 
-**Geliştirilmesi Planlanan Özellikler**
-  Daha fazla ticaret stratejisi entegrasyonu
-  Kullanıcıların geçmiş performanslarını görüntüleyebilmesi
-  Mobil uygulamada kar ve zarar analizleri
-  Machine Learning kullanarak strateji optimizasyonu
+## **Bağımlılıklar**
+
+### **Backend**
+- Python 3.8 veya üzeri
+- Flask
+- Flask-SocketIO
+- Pandas
+- NumPy
+- Binance API
+
+### **Frontend**
+- Kotlin
+- Retrofit
+- Coroutine
+- LiveData ve ViewModel
+
+---
+
+## **Geliştirilmesi Planlanan Özellikler**
+- Daha fazla ticaret stratejisi entegrasyonu
+- Kullanıcıların geçmiş performanslarını görüntüleyebilmesi
+- Mobil uygulamada kar ve zarar analizleri
+- Machine Learning kullanarak strateji optimizasyonu
+
 
 
 # CryptoSignal
