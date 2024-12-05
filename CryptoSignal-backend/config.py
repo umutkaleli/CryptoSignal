@@ -1,0 +1,5 @@
+BINANCE_API_KEY = "eMUIBdwSn8j3ik559HsJsA7uz8D9wdOJMj19V2O39w6LamHcLFZKRMnHGDHVOiG1"
+BINANCE_SECRET_KEY = "2PmumiAxxidxxasH9EwuPfeAnRfbJocApK9q2sPTeZqibe4BcsdrpKKHUjf16ODU"
+BASE_URL = "https://api.binance.com/api"  # Spot Mainnet
+COINS = ["ETHUSDT", "BTCUSDT", "AVAXUSDT", "SOLUSDT", "RENDERUSDT", "FETUSDT"]
+
